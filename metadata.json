@@ -1,0 +1,5 @@
+{
+  "name": "Microsoft Sign-in Replica",
+  "description": "A pixel-accurate replica of the Microsoft sign-in interface with a 2-step flow.",
+  "requestFramePermissions": []
+}
